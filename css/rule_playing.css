@@ -1,0 +1,53 @@
+.introBox p {
+  margin-left: 20%;
+  text-align: center;
+  width: 40vw;
+}
+.introBox .btns {
+  margin-top: 5%;
+}
+.nextBtn {
+  padding: 10% 15% 10% 0;
+}
+.nextBtn::before {
+  left: 74%;
+  transform: rotate(45deg);
+}
+.nextBtn::after {
+  left: 70%;
+}
+#page2,
+#page3,
+#page4 {
+  display: none;
+}
+#page4 {
+  text-align: center;
+}
+#page4 span {
+  font-weight: bold;
+}
+#page2 p:nth-child(1),
+#page3 p:nth-child(1),
+#page4 p:nth-child(1),
+#page4 p:nth-child(3),
+#page4 p:nth-child(6) {
+  font-weight: bold;
+  text-align: center;
+}
+#page2 p:nth-child(2),
+#page3 p:nth-child(4) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#page2 img {
+  background: #efefef;
+  border: 1px solid black;
+  padding: 2px;
+  width: 5%;
+}
+#page3 img {
+  padding: 2px;
+  width: 7%;
+}

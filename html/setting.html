@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/setting.css" />
+    <link rel="stylesheet" type="text/css" href="../css/bg.css" />
+    <title>設定画面</title>
+  </head>
+  <body>
+    <div class="bg_pattern Rhombus"></div>
+    <div class="title">ゲーム設定</div>
+    <div class="wrap">
+      <div class="selectPlayerNum">
+        <p>プレイ人数</p>
+        <div class="flexWrap">
+          <input
+            id="num3"
+            class="radio-num__input"
+            type="radio"
+            name="num-radio"
+            value="3" />
+          <label class="radio-num__label" id="num3" for="num3"> 3 人 </label>
+          <input
+            id="num4"
+            class="radio-num__input"
+            type="radio"
+            name="num-radio"
+            value="4"
+            checked="checked" />
+          <label class="radio-num__label" id="num4" for="num4"> 4 人 </label>
+          <input
+            id="num5"
+            class="radio-num__input"
+            type="radio"
+            name="num-radio"
+            value="5" />
+          <label class="radio-num__label" id="num5" for="num5"> 5 人 </label>
+          <input
+            id="num6"
+            class="radio-num__input"
+            type="radio"
+            name="num-radio"
+            value="6" />
+          <label class="radio-num__label" id="num6" for="num6"> 6 人 </label>
+          <input
+            id="num7"
+            class="radio-num__input"
+            type="radio"
+            name="num-radio"
+            value="7" />
+          <label class="radio-num__label" id="num7" for="num7"> 7 人 </label>
+          <input
+            id="num8"
+            class="radio-num__input"
+            type="radio"
+            name="num-radio"
+            value="8" />
+          <label class="radio-num__label" id="num8" for="num8"> 8 人 </label>
+        </div>
+      </div>
+      <div class="selectCardsKind">
+        <p>カードの種類 ※各種類5枚</p>
+        <div class="flexWrap">
+          <input
+            id="kind6"
+            class="radio-kind__input"
+            type="radio"
+            name="kind-radio"
+            value="6" />
+          <label class="radio-kind__label" id="kind6" for="kind6">
+            6 種類
+          </label>
+          <input
+            id="kind12"
+            class="radio-kind__input"
+            type="radio"
+            name="kind-radio"
+            value="12"
+            checked="checked" />
+          <label class="radio-kind__label" id="kind12" for="kind12">
+            12 種類
+          </label>
+          <input
+            id="kind16"
+            class="radio-kind__input"
+            type="radio"
+            name="kind-radio"
+            value="16" />
+          <label class="radio-kind__label" id="kind16" for="kind16">
+            16 種類
+          </label>
+          <input
+            id="kind24"
+            class="radio-kind__input"
+            type="radio"
+            name="kind-radio"
+            value="24" />
+          <label class="radio-kind__label" id="kind24" for="kind24">
+            24 種類
+          </label>
+          <input
+            id="kind30"
+            class="radio-kind__input"
+            type="radio"
+            name="kind-radio"
+            value="30" />
+          <label class="radio-kind__label" id="kind30" for="kind30">
+            30 種類
+          </label>
+          <input
+            id="kind48"
+            class="radio-kind__input"
+            type="radio"
+            name="kind-radio"
+            value="48" />
+          <label class="radio-kind__label" id="kind48" for="kind48">
+            48 種類
+          </label>
+        </div>
+      </div>
+      <div class="selectPlayerNum">
+        <p>プレイヤーネーム</p>
+        <div class="flexWrap">
+          <input
+            id="numConf"
+            class="radio-name__input"
+            type="button"
+            name="numConf-radio" />
+          <label class="radio-name__label" id="numConf" for="numConf">
+            プレイヤーネームを変更
+          </label>
+        </div>
+      </div>
+      <div class="btns">
+        <div>
+          <button class="backBtn" onclick="location.href='start.html'">
+            戻る
+          </button>
+        </div>
+        <div>
+          <button class="startBtn" onclick="location.href='play.html'">
+            スタート
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="nameChangeBox">
+      <div id="nameList"></div>
+      <div class="btns">
+        <button class="closeBtn" id="close">閉じる</button>
+      </div>
+    </div>
+
+    <script src="../js/setting.js"></script>
+  </body>
+</html>

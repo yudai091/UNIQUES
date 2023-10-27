@@ -1,0 +1,125 @@
+button {
+  font-size: medium;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  background: #8cbbf7;
+  border-radius: 10px;
+  color: #fff;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  width: 10vw;
+}
+.nextBtn {
+  padding: 10% 15% 10% 0;
+}
+.backBtn {
+  padding: 10% 0 10% 15%;
+}
+button::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+}
+.nextBtn::before {
+  left: 74%;
+  transform: rotate(45deg);
+}
+.backBtn::before {
+  left: 24%;
+  transform: rotate(-135deg);
+}
+button::after {
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  width: 23px;
+  height: 23px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+.nextBtn::after {
+  left: 70%;
+}
+.backBtn::after {
+  left: 16%;
+}
+button:hover {
+  background-color: #6ea4e9;
+  box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
+}
+.title {
+  color: white;
+  font-size: 130%;
+  background: orange;
+  font-weight: bold;
+  left: 5%;
+  padding: 2% 5%;
+  position: fixed;
+  top: 15%;
+  transform: rotate(-30deg);
+  z-index: 1;
+}
+.wrap {
+  align-content: center;
+  background: #e8d3b2;
+  box-shadow: 1px 1px 7px black;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 35vh;
+  margin: 10%;
+  padding: 5%;
+  position: fixed;
+  width: 70vw;
+}
+.btns {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+#page2,
+#page3,
+#page4 {
+  display: none;
+}
+#page4 {
+  text-align: center;
+}
+#page4 span {
+  font-weight: bold;
+}
+#page2 p:nth-child(1),
+#page3 p:nth-child(1),
+#page4 p:nth-child(1),
+#page4 p:nth-child(3),
+#page4 p:nth-child(6) {
+  font-weight: bold;
+  text-align: center;
+}
+#page2 p:nth-child(2),
+#page3 p:nth-child(4) {
+  display: flex;
+  align-items: center;
+}
+#page2 img {
+  background: #efefef;
+  border: 1px solid black;
+  padding: 2px;
+  width: 5%;
+}
+#page3 img {
+  padding: 2px;
+  width: 7%;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/rule.css" />
+    <link rel="stylesheet" type="text/css" href="../css/bg.css" />
+    <title>遊び方画面</title>
+  </head>
+  <body>
+    <div class="bg_pattern Rhombus"></div>
+    <div class="title">遊び方</div>
+    <div class="wrap">
+      <div class="introBox">
+        <div id="page1">
+          <p>UNIQUESは大きく二つの基本ルールしかありません。</p>
+          <p>一つは、キャラクターに名前を付けること。</p>
+          <p>もう一つは、名前の付けられたキャラクターの名前を叫ぶことです。</p>
+          <div class="btns">
+            <div>
+              <button id="page1NextBtn" class="nextBtn">次へ</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="page2">
+          <p>【新しい種類のキャラクターが出た場合】</p>
+          <p>
+            自分の番になったら、<img
+              src="../img/flip.svg" />を押して1枚カードを引きます。
+          </p>
+          <p>
+            このとき、引いたカードが新しい種類のキャラクターであった場合には、そのキャラクターに名前をつけることができます。
+          </p>
+          <p>
+            人物名や物の名前、アニメのキャラクターなど、名前の制限はありません。また、長さにも限りはないので、常識の範囲内で自由に名前を付けることができます。
+          </p>
+          <div class="btns">
+            <div>
+              <button id="page2BackBtn" class="backBtn">戻る</button>
+            </div>
+            <div>
+              <button id="page2NextBtn" class="nextBtn">次へ</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="page3">
+          <p>【既に名前をつけたキャラクターが出た場合】</p>
+          <p>
+            デッキの上から1枚を引いた際に、既に誰かが名前を付けたキャラクターが出た場合には、その名前を叫んでください。
+          </p>
+          <p>
+            もっとも早くその名前を言うことができた人は、捨て札置き場にあるカードを全て獲得することができます。
+          </p>
+          <p>自分の<img src="../img/getBtn.png" />を押すと獲得出来ます。</p>
+          <p>
+            どちらが早く名前を言ったか分からなかった場合は、第3者に判定してもらいます。
+          </p>
+          <div class="btns">
+            <div>
+              <button id="page3BackBtn" class="backBtn">戻る</button>
+            </div>
+            <div>
+              <button id="page3NextBtn" class="nextBtn">次へ</button>
+            </div>
+          </div>
+        </div>
+        <div id="page4">
+          <p>【プレイ人数】</p>
+          <p>
+            <span>3</span
+            >人から<span>8</span>人で遊ぶことが出来ます。<br />初期状態は4人です。
+          </p>
+          <p>【カードの種類】</p>
+          <p>
+            <span>6</span
+            >種類から<span>48</span>種類を選んで遊ぶことが出来ます。<br />初期状態は12種類です。
+          </p>
+          <p>
+            人数が少なく、カードの種類が多いと難易度が高くなり、人数が多く、カードの種類が少ないと難易度は低くなります。
+          </p>
+          <p>最後に1番多くのカードを獲得している人が勝利です!</p>
+          <div class="btns">
+            <div>
+              <button id="page4BackBtn" class="backBtn">戻る</button>
+            </div>
+            <div>
+              <button
+                id="page4NextBtn"
+                class="nextBtn"
+                onclick="location.href='./start.html'">
+                閉じる
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/rule.js"></script>
+  </body>
+</html>

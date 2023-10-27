@@ -1,0 +1,210 @@
+body {
+  margin: 0;
+}
+label {
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+  font-size: medium;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  background: #8cbbf7;
+  border-radius: 10px;
+  color: #fff;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  width: 10vw;
+}
+.startBtn {
+  padding: 10% 15% 10% 0;
+}
+.backBtn {
+  padding: 10% 0 10% 15%;
+}
+.closeBtn {
+  padding: 2% 5%;
+  width: auto !important;
+}
+.closeBtn::before,
+.closeBtn::after {
+  display: none;
+}
+button::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+}
+.startBtn::before {
+  left: 74%;
+  transform: rotate(45deg);
+}
+.backBtn::before {
+  left: 24%;
+  transform: rotate(-135deg);
+}
+button::after {
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  width: 23px;
+  height: 23px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+.startBtn::after {
+  left: 70%;
+}
+.backBtn::after {
+  left: 16%;
+}
+button:hover {
+  background-color: #6ea4e9;
+  box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
+}
+.title {
+  color: white;
+  font-size: 130%;
+  background: orange;
+  font-weight: bold;
+  left: 5%;
+  padding: 2% 5%;
+  position: fixed;
+  top: 15%;
+  transform: rotate(-30deg);
+  z-index: 1;
+}
+.wrap {
+  align-content: center;
+  background: #e8d3b2;
+  box-shadow: 1px 1px 7px black;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 10%;
+  padding: 5%;
+  position: fixed;
+  width: 70vw;
+}
+.flexWrap {
+  display: flex;
+  justify-content: center;
+}
+.btns {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+
+.radio-num__input,
+.radio-kind__input,
+.radio-name__inpu {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+}
+
+.radio-num__label,
+.radio-kind__label,
+.radio-name__label {
+  border-radius: 5px;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-right: 18px;
+  transition: all 0.2s;
+}
+.radio-name__label {
+  background: white;
+  border: 2px solid gray;
+}
+#num3 {
+  background: lightcoral;
+}
+#num4 {
+  background: lightblue;
+}
+#num5 {
+  background: lightgoldenrodyellow;
+}
+#num6 {
+  background: palegreen;
+}
+#num7 {
+  background: pink;
+}
+#num8 {
+  background: khaki;
+}
+#kind6 {
+  background: darksalmon;
+}
+#kind12 {
+  background: darkturquoise;
+}
+#kind16 {
+  background: palegoldenrod;
+}
+#kind24 {
+  background: darkseagreen;
+}
+#kind30 {
+  background: plum;
+}
+#kind48 {
+  background: gold;
+}
+.radio-num__input:checked + .radio-num__label,
+.radio-kind__input:checked + .radio-kind__label {
+  outline-color: #4d90fe;
+  outline-offset: -2px;
+  outline-style: auto;
+  outline-width: 8px;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.7);
+  transform: scale(1.3);
+}
+.radio-name__input {
+  display: none;
+}
+.selectPlayerNum {
+  border-bottom: 3px solid white;
+  padding-bottom: 2%;
+}
+.selectPlayerNum p,
+.selectCardsKind p {
+  font-weight: bold;
+  transform: scale(1.1);
+}
+#nameChangeBox {
+  background: lightgray;
+  opacity: 0;
+  visibility: hidden;
+  top: 10%;
+  left: 10%;
+  height: 80vh;
+  position: fixed;
+  width: 80vw;
+  z-index: 0;
+}
+#nameList {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+.playerNameBox {
+  margin-top: 1%;
+  padding: 1%;
+  text-align: center;
+  width: 20vw;
+}
