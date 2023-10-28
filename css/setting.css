@@ -208,3 +208,10 @@ button:hover {
   text-align: center;
   width: 20vw;
 }
+#nameChangeMark {
+  background: skyblue;
+  display: none;
+  padding: 0.5%;
+  position: absolute;
+  left: 60%;
+}
