@@ -391,7 +391,7 @@
 }
 #howtoBtn,
 #retireBtn {
-  padding: 0.6%;
+  padding: 5%;
 }
 #retireBtn {
   margin-top: 1%;
@@ -435,4 +435,5 @@
 .menuBtns {
   display: flex;
   flex-direction: column;
+  position: fixed;
 }
